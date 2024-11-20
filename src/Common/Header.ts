@@ -8,9 +8,9 @@ export class Header extends Component {
 
 
 
-    new Component(this.root, "a", null, "Каталог", ["href"], ["#"]);
+    new Component(this.root, "a", null, "Каталог", ["href"], ["#catalog"]);
     new Component(this.root, "a", null, "Главная", ["href"], ["#"]);
-    new Component(this.root, "a", null, "Клиентам", ["href"], ["#"]);
+    new Component(this.root, "a", null, "Клиентам", ["href"], ["#information"]);
 
 
     const Info = new Component(

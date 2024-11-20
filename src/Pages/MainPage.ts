@@ -15,4 +15,14 @@ export class MainPage extends Component {
 
 
 }
+renderWithUpdate(): void {
+  if (!this.stateUpdate) {
+    this.update();
+    this.stateUpdate = true;
+  }
+  this.Render();
+}
+
+update(): void {}
+
 }
