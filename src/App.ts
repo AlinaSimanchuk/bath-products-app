@@ -4,10 +4,13 @@ import { Header } from "./Common/Header";
 import { Router } from "./Common/Router";
 import { Catalog } from "./Pages/CatalogPage";
 import { Information } from "./Pages/InformationPage";
-
 import { MainPage } from "./Pages/MainPage";
-
 import "./sass/style.scss";
+import { DBService } from "./Services/DBService";
+import { LogicService } from "./Services/LogicService";
+
+const dbService = new DBService();
+const logicService = new LogicService(dbService);
 
 class App {
   constructor(parent: HTMLElement) {
@@ -17,7 +20,7 @@ class App {
     const main = new Component(wrap.root, "main");
     const links = {
       "#": new MainPage(main.root),
-      "#catalog": new Catalog(main.root),
+      "#catalog": new Catalog(main.root, logicService),
       "#information": new Information(main.root),
     };
     new Router(links);

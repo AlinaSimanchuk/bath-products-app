@@ -1,8 +1,54 @@
 .catalog {
+  padding-top: 29px;
     width: 1024px;
-    height: 500px;
-    padding: 50px;
-    background-image: url('../../assets/background.jpg');
-    background-size: cover;
-    color: #FFFFFF;
+    
+    .data__buttons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .data__goods {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 0px 30px 60px;
+
+      .cart {
+        margin-right: 60px;
+
+        h3 {
+          font-family: Pangolin;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24.98px;
+          text-align: center;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+
+        }
+      }
+
+      .cart:last-child {
+        margin-left: 0px;
+      }
+    }
+
+    .criteria_button {
+      cursor: pointer;
+      margin-right: 7px;
+      background-image: url('../../assets/scrab.png');
+      background-color: #C4F7FFB0;
+      border: none;
+      background-repeat: no-repeat;
+      font-family: Pangolin;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 32.47px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      width: 195px;
+      height: 80px;
+      border-radius: 36px;
+      text-align: right;
+    }
   }
