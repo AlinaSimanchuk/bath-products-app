@@ -1,0 +1,26 @@
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.header {
+    width: 1024px;
+    border: 1px solid #000000;
+    background-color: #C4F7FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      font-family: Pangolin;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 49.96px;
+      text-align: left;
+      text-decoration: none;
+      color: white;
+      -webkit-text-stroke: 1px black;
+    }
+}

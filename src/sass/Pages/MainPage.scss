@@ -1,0 +1,22 @@
+.main_pages {
+    width: 1024px;
+
+    .main_title {
+      font-family: Pangolin;
+      font-size: 54px;
+      font-weight: 400;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #C4F7FFB0;
+      -webkit-text-stroke: 1px black;
+      margin-top: 16px;
+    }
+
+    .main_imageBlock {
+      padding-top: 42px;
+      padding-bottom: 42px;
+      display: flex;
+      justify-content: space-around;
+    }
+    }
